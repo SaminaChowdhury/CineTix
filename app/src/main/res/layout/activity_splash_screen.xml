@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white3">
+
+    <!-- Centered Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="394dp"
+        android:layout_height="208dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:contentDescription="@string/app_title"
+        android:src="@drawable/logo"
+        android:visibility="visible" />
+
+    <!-- App Title -->
+
+    <!-- Get Started Button -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImage"
+        android:layout_marginTop="-22dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/app_title"
+        android:textColor="@color/seaBlue2"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:ignore="VisualLintOverlap" />
+    <ImageView
+        android:id="@+id/shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:contentDescription="@string/app_title"
+        android:src="@drawable/shape1"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/TealBlue"
+        android:padding="10dp"
+        android:text="@string/get_started"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        tools:ignore="VisualLintButtonSize" />
+</RelativeLayout>

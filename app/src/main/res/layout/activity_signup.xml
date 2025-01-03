@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@color/white3">
+
+    <!-- ImageView at the top -->
+    <ImageView
+        android:id="@+id/shape3"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="-20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/signup_image"
+        android:src="@drawable/signup"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- TextView for "Signup" -->
+    <TextView
+        android:id="@+id/signupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shape3"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/signup"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <!-- EditText for Name -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupTitle"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/enter_your_name"
+        android:inputType="textPersonName"
+        android:autofillHints="name"
+        android:importantForAutofill="yes"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    <!-- EditText for Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:importantForAutofill="yes"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    <!-- Password EditText with Eye Icon -->
+    <RelativeLayout
+        android:id="@+id/passwordContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:importantForAutofill="no">
+
+        <!-- EditText for Password -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:importantForAutofill="yes"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+        <!-- Eye Icon for Password Toggle -->
+        <ImageView
+            android:id="@+id/passwordToggle"
+            android:layout_width="44dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/visibility_on"
+            android:contentDescription="@string/toggle_password_visibility"
+            android:padding="8dp" />
+    </RelativeLayout>
+
+    <!-- Signup Button -->
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordContainer"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/TealBlue"
+        android:padding="12dp"
+        android:text="@string/signup2"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Login Link -->
+    <TextView
+        android:id="@+id/loginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/already_have_an_account_login"
+        android:textColor="@color/seaBlue2"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

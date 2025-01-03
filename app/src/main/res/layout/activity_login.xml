@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white3">
+
+    <!-- ImageView at the top -->
+    <ImageView
+        android:id="@+id/shape2"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="-19dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/login_image"
+        android:src="@drawable/login"
+        tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
+    <!-- TextView for "Login" -->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shape2"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/TealBlue" />
+
+    <!-- EditText for Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTitle"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <!-- Password EditText with Eye Icon -->
+    <RelativeLayout
+        android:id="@+id/passwordContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+
+        <!-- EditText for Password -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            tools:ignore="TextContrastCheck" />
+
+        <!-- Eye Icon for Password Toggle -->
+        <ImageView
+            android:id="@+id/passwordToggle"
+            android:layout_width="44dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/visibility_off"
+            android:contentDescription="@string/toggle_password_visibility"
+            android:padding="8dp" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/forgotPasswordLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordContainer"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/forgot_password"
+        android:textColor="@color/seaBlue2"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordContainer"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/TealBlue"
+        android:padding="12dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <!-- Sign-up Link -->
+    <TextView
+        android:id="@+id/signupLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/don_t_have_an_account_signup"
+        android:textColor="@color/seaBlue2"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

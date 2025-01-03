@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white2">#F2F8FC</color>
+    <color name="white3">#F0F8FF</color>
+    <color name="TealBlue">#1C749A</color>
+    <color name="seaBlue">#3795BD</color>
+    <color name="PersianBlue">#065499</color>
+    <color name="seaBlue2">#106387</color>
+    <color name="gray">#707070</color>
+    <color name="lightBlue">#60c5f0</color>
+
+</resources>
