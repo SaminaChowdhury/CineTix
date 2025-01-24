@@ -19,4 +19,14 @@
     <string name="forgot_password2">Forgot Password</string>
     <string name="reset_password">Reset Password</string>
     <string name="back_to_login">Back to Login</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search Movies Here</string>
+    <string name="top_movies">Top Movies</string>
+    <string name="see_all">See all</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="explorer">Explorer</string>
+    <string name="favorite">Favorite</string>
+    <string name="cart">Cart</string>
+    <string name="todo">TODO</string>
+
 </resources>

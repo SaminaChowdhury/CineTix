@@ -8,6 +8,7 @@ android {
     namespace = "com.example.cinetix"
     compileSdk = 35
 
+
     defaultConfig {
         applicationId = "com.example.cinetix"
         minSdk = 24
@@ -34,6 +35,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -50,5 +54,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.glide)
+    implementation (libs.chip.navigation.bar)
+    implementation (libs.blurview)
 
 }

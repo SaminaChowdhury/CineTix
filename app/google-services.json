@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "157050456821",
+    "firebase_url": "https://cinetix-a11c8-default-rtdb.firebaseio.com",
     "project_id": "cinetix-a11c8",
     "storage_bucket": "cinetix-a11c8.firebasestorage.app"
   },
