@@ -1,4 +1,10 @@
 package com.example.cinetix.Models
 
-class Film2 {
-}
+import java.io.Serializable
+
+data class Film2(
+    val id: String,
+    val title: String,
+    val description: String,
+    val imageUrl: String
+) : Serializable

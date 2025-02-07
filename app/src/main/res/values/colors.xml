@@ -5,10 +5,19 @@
     <color name="white2">#F2F8FC</color>
     <color name="white3">#F0F8FF</color>
     <color name="TealBlue">#1C749A</color>
+    <color name="tealBlue2">#004A69</color>
     <color name="seaBlue">#3795BD</color>
+    <color name="seaBlue3">#C2E7F7</color>
     <color name="PersianBlue">#065499</color>
     <color name="seaBlue2">#106387</color>
     <color name="gray">#707070</color>
     <color name="lightBlue">#60c5f0</color>
+    <color name="black2">#90000000</color>
+    <color name="black3">#36454F</color>
+    <color name="black4">#5A7181</color>
+    <color name="seaBlue4">#8EC4DC</color>
+    <color name="seaBlue5">#3795BD</color>
+    <color name="orange">#FFA500</color>
+    <color name="sweetRed">#DB5A63</color>
 
 </resources>

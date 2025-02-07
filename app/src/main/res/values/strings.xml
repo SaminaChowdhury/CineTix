@@ -28,5 +28,26 @@
     <string name="favorite">Favorite</string>
     <string name="cart">Cart</string>
     <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="title">Title</string>
+    <string name="year">Year</string>
+    <string name="imdb">IMDB</string>
+    <string name="summary">Summary</string>
+    <string name="test">test</string>
+    <string name="cast">Cast</string>
+    <string name="buy_ticket">Buy Ticket</string>
+    <string name="name">Name</string>
+    <string name="selected_seats">Selected Seats</string>
+    <string name="available">Available</string>
+    <string name="selected">Selected</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="download_ticket">Download Ticket</string>
+    <string name="_0">$0</string>
+    <string name="_0_seat_selected">0 Seat Selected</string>
+    <string name="hyphen">-</string>
+    <string name="time">time</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
 
 </resources>

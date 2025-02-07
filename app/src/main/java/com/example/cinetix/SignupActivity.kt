@@ -59,6 +59,28 @@ class SignupActivity : AppCompatActivity() {
             Toast.makeText(this, "All fields are required!", Toast.LENGTH_SHORT).show()
             return
         }
+        if (password.length < 6) {
+            Toast.makeText(this, "Password should be at least 6 characters long!", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if (!email.contains("@")) {
+            Toast.makeText(this, "Invalid email format!", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if (!email.contains(".")) {
+            Toast.makeText(this, "Invalid email format!", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if (password.contains(" ")) {
+            Toast.makeText(this, "Password cannot contain spaces!", Toast.LENGTH_SHORT).show()
+            return
+        }
+        if (email.contains(" ")) {
+            Toast.makeText(this, "Email cannot contain spaces!", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {

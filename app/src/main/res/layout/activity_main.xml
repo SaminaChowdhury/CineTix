@@ -15,86 +15,85 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="100dp"
             android:orientation="vertical" >
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="48dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp">
+                android:layout_height="wrap_content"
+                android:background="@drawable/light_white_bg"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/titleHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/PersianBlue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
 
                 <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/profile"
+                    android:id="@+id/iconSettings"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/settings"
+                    android:focusable="true"
+                    android:padding="8dp"
+
+                    android:src="@drawable/ic_settings"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/profile" />
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hello! Sam"
-                    android:layout_marginStart="16dp"
-                    android:textSize="19sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/seaBlue2"
-                    app:layout_constraintStart_toEndOf="@+id/imageView"
-                    app:layout_constraintTop_toTopOf="parent"/>
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="sam@gmail.com"
-                    android:textColor="@color/seaBlue"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/textView2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2"
-
-                    />
-
+                     />
             </androidx.constraintlayout.widget.ConstraintLayout>
-            <EditText
-                android:id="@+id/editTextText"
+
+            <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:autofillHints=""
-                android:drawableStart="@drawable/search"
-                android:padding="12dp"
-                android:drawablePadding="8dp"
-                android:textColor="@color/white3"
-                android:hint="@string/search"
-                android:textColorHint="@color/white3"
-                android:drawableEnd="@drawable/microphone"
-                android:ems="10"
-                android:inputType="text"
-                android:layout_margin="16dp"
-                android:background="@drawable/light_blue_bg"/>
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/line"
+                android:layout_marginStart="-42dp"
+                android:layout_marginEnd="-42dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/todo"
+                />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp">
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp">
                 <androidx.viewpager2.widget.ViewPager2
                     android:id="@+id/viewPager2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:paddingStart="60dp"
+                    android:paddingEnd="60dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
 
-                <ProgressBar
-                    android:id="@+id/progressBarSlider"
-                    style="?android:attr/progressBarStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    app:layout_constraintBottom_toBottomOf="@+id/viewPager2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/viewPager2"
-                    />
+<!--                <ProgressBar-->
+<!--                    android:id="@+id/progressBarSlider"-->
+<!--                    style="?android:attr/progressBarStyle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/viewPager2"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/viewPager2"-->
+<!--                    />-->
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
@@ -115,15 +114,27 @@
                     android:textColor="@color/PersianBlue"
                     android:textStyle="bold"
                     />
-
-                <TextView
-                    android:id="@+id/textView4"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_see_all"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="@string/see_all"
                     android:textColor="@color/PersianBlue"
-                    />
+                    android:background="@drawable/light_white_bg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/seeall"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textAlignment="viewEnd"-->
+<!--                    android:text="@string/see_all"-->
+<!--                    android:textColor="@color/PersianBlue"-->
+<!--                    />-->
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -132,7 +143,7 @@
 
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/RecycleViewTopMovies"
+                    android:id="@+id/recyclerViewTopMovies"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clipToPadding="false"
@@ -148,10 +159,10 @@
                     style="?android:attr/progressBarStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="@+id/RecycleViewTopMovies"
+                    app:layout_constraintBottom_toBottomOf="@+id/recyclerViewTopMovies"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/RecycleViewTopMovies"/>
+                    app:layout_constraintTop_toTopOf="@+id/recyclerViewTopMovies" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
@@ -172,14 +183,18 @@
                     android:textColor="@color/PersianBlue"
                     android:textStyle="bold"
                     />
-
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_see_all2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="@string/see_all"
                     android:textColor="@color/PersianBlue"
-                    />
+                    android:background="@drawable/light_white_bg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
             </LinearLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -187,9 +202,10 @@
 
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/RecycleViewUpcomingMovies"
+                    android:id="@+id/recyclerViewUpcoming"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+
                     android:clipToPadding="false"
                     android:paddingStart="12dp"
                     android:paddingEnd="12dp"
@@ -199,14 +215,14 @@
                     app:layout_constraintTop_toTopOf="parent"/>
 
                 <ProgressBar
-                    android:id="@+id/progressBarUpcomingMovies"
+                    android:id="@+id/progressBarUpcoming"
                     style="?android:attr/progressBarStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="@+id/RecycleViewUpcomingMovies"
+                    app:layout_constraintBottom_toBottomOf="@+id/recyclerViewUpcoming"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/RecycleViewUpcomingMovies"/>
+                    app:layout_constraintTop_toTopOf="@+id/recyclerViewUpcoming"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -227,24 +243,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <!--    <com.ismaeldivita.chipnavigation.ChipNavigationBar-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="70dp"-->
-<!--        app:cnb_menuResources="@menu/bottom_menu"-->
-<!--        android:background="@drawable/light_blue_bg"
-        app:cnb_textColor="@color/seaBlue2"-->
-<!--        android:padding="4dp"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:layout_marginEnd="8dp"-->
-<!--        android:layout_marginBottom="32dp"-->
-<!--        app:cnb_iconsize="20dp"-->
-<!--        app:iconColor="@color/seaBlue2"-->
-<!--        app:cnb_orientaionMode="horizontal"-->
-<!--        app:cnb_radius="10dp"-->
-<!--        app:cnb_unselectedColor="@color/PersianBlue"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

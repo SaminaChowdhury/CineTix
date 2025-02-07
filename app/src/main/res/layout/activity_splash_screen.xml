@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white3">
 
-    <!-- Centered Logo -->
+
     <ImageView
         android:id="@+id/logoImage"
         android:layout_width="394dp"
@@ -16,9 +16,9 @@
         android:src="@drawable/logo"
         android:visibility="visible" />
 
-    <!-- App Title -->
 
-    <!-- Get Started Button -->
+
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"

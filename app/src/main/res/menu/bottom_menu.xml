@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/explorer"
-        android:icon="@drawable/btn_1"
-        android:title="@string/explorer"
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="@string/home"
         app:cnb_backgroundColor="@color/white3"
         app:cnb_textColor="@color/PersianBlue"
         />
@@ -14,13 +14,7 @@
         android:title="@string/favorite"
         app:cnb_backgroundColor="@color/white3"
         app:cnb_textColor="@color/PersianBlue" />
-    <item
-        android:id="@+id/cart"
-        android:icon="@drawable/btn_3"
-        android:title="@string/cart"
-        app:cnb_backgroundColor="@color/white3"
-        app:cnb_textColor="@color/PersianBlue"
-        />
+
     <item
         android:id="@+id/profile"
         android:icon="@drawable/btn_4"

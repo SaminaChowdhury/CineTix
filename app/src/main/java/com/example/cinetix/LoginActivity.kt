@@ -70,7 +70,7 @@ class LoginActivity : AppCompatActivity() {
             return
         }
 
-        loginButton.isEnabled = false // Disable button to prevent multiple clicks
+        loginButton.isEnabled = false
 
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
@@ -90,7 +90,7 @@ class LoginActivity : AppCompatActivity() {
                             "Email not verified. Please check your inbox or spam folder.",
                             Toast.LENGTH_LONG
                         ).show()
-                        auth.signOut() // Log out unverified users
+                        auth.signOut()
                     }
                 } else {
                     Toast.makeText(

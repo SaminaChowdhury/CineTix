@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.cinetix"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -37,6 +37,11 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding= true
+
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -57,5 +62,15 @@ dependencies {
     implementation(libs.glide)
     implementation (libs.chip.navigation.bar)
     implementation (libs.blurview)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.firebase.firestore.ktx)
+    implementation(libs.firebase.database.ktx)
+    implementation (libs.gson)
+    implementation (libs.play.services.base)
+    implementation (libs.play.services.maps)
+    implementation (libs.play.services.location)
+
+
+
 
 }

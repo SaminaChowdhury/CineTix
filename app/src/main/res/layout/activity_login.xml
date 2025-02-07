@@ -7,7 +7,7 @@
     tools:context=".LoginActivity"
     android:background="@color/white3">
 
-    <!-- ImageView at the top -->
+
     <ImageView
         android:id="@+id/shape2"
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:src="@drawable/login"
         tools:ignore="ImageContrastCheck,VisualLintBounds" />
 
-    <!-- TextView for "Login" -->
+
     <TextView
         android:id="@+id/loginTitle"
         android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
         android:textStyle="bold"
         android:textColor="@color/TealBlue" />
 
-    <!-- EditText for Email -->
+
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
@@ -49,7 +49,7 @@
         android:textColorHint="@color/gray"
         tools:ignore="VisualLintTextFieldSize" />
 
-    <!-- Password EditText with Eye Icon -->
+
     <RelativeLayout
         android:id="@+id/passwordContainer"
         android:layout_width="match_parent"
@@ -59,7 +59,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp">
 
-        <!-- EditText for Password -->
+
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
@@ -76,7 +76,7 @@
             android:textColorHint="@color/gray"
             tools:ignore="TextContrastCheck" />
 
-        <!-- Eye Icon for Password Toggle -->
+
         <ImageView
             android:id="@+id/passwordToggle"
             android:layout_width="44dp"
@@ -102,7 +102,7 @@
         android:textStyle="bold" />
 
 
-    <!-- Login Button -->
+
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
@@ -118,7 +118,7 @@
         android:textSize="18sp"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
-    <!-- Sign-up Link -->
+
     <TextView
         android:id="@+id/signupLink"
         android:layout_width="wrap_content"

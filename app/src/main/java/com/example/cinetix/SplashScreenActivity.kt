@@ -21,7 +21,7 @@ class SplashScreenActivity : AppCompatActivity() {
         getStartButton.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-            finish()  // Ensures the splash screen is not revisited on back press
+            finish()
         }
     }
 }

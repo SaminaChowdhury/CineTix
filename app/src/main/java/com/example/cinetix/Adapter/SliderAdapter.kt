@@ -26,14 +26,14 @@ class SliderAdapter(
     inner class SliderViewHolder(private val binding: ViewholderSliderBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(sliderItems: SliderItems) {
             val requestOptions = RequestOptions()
-                .transform(CenterCrop(), RoundedCorners(20)) // Only apply transformations
+                .transform(CenterCrop(), RoundedCorners(60))
 
             sliderItems.image?.let {
                 Glide.with(binding.root.context)
                     .load(it)
                     .apply(requestOptions)
                     .dontAnimate()
-                    .into(binding.imageSlide) // Load the image into the ImageView
+                    .into(binding.imageSlide)
             }
         }
     }
